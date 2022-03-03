@@ -1,0 +1,3 @@
+select sum(imposto) as Imposto , month(DATA_VENDA) as Mês, year(DATA_VENDA) as Ano
+from notas_fiscais
+WHERE YEAR(DATA_VENDA)=2016 group by month(DATA_VENDA);
