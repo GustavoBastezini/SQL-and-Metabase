@@ -1,0 +1,2 @@
+select CIDADE, ESTADO, sum(LIMITE_DE_CREDITO) as Limite_de_Credito from tabela_de_clientes 
+where idade between 20 and 35 group by ESTADO;
